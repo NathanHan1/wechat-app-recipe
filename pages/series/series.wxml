@@ -1,0 +1,7 @@
+<!-- pages/series/series.wxml -->
+<view class="seriesWrapper">
+    <view wx:for="{{result}}" wx:key="{{item.name}}" bindtap="linkToItem" data-cid="{{item.cid}}" class="itemWrapper">
+        <text class="itemText">{{item.name}}</text>
+        <image class="itemImage" src="{{item.imgUrl}}" />
+    </view>
+</view>

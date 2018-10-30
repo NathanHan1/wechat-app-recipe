@@ -1,0 +1,33 @@
+/* pages/my/my.wxss */
+.userInfoWrapper{
+    width: 750rpx;
+    height: 200px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.userInfoMain .avatar {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.userInfoMain .name {
+    text-align: center;
+    font-size: 16px;
+}
+
+.btnShare{
+    width: 750rpx;
+    margin-bottom: 10px;
+}
+
+/* .btnShare .text {
+    position: relative;
+    left: -30%;
+    top: 0;
+} */

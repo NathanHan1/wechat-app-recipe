@@ -1,0 +1,27 @@
+<view class="index">
+    <view class="cookerWrapper">
+        <image class="cooker" src="../../img/cooker.png" />
+    </view>
+    <view class="iptWrapper">
+        <input type="text" 
+        placeholder="搜索食谱" 
+        confirm-type="search" 
+        class="ipt" 
+        bindconfirm="search"
+        />
+        <image class="search" src="../../img/search.png" />
+    </view>
+    <view class="randomWrapper">
+        <view wx:if="{{showrandom}}" class="random">
+            <text class="tip" style="transform:{{scale}}">不知道想做什么？让小厨告诉您！</text>
+            <image class="imgrandom" bindtap="random" style="transform:{{scale}}" src="../../img/random.png" alt="" />
+        </view>
+        <view wx:else class="randomFoodWrapper" bindtap="linkToDetails">
+            <image wx:if="{{randomData.tags}}" class="imgFood" src="{{randomData.albums[0]}}" />
+            <image wx:else class="imgSorry" src="{{randomData.albums[0]}}" />
+            <text class="title">{{randomData.title}}</text>
+            <text class="desc">{{randomData.tags}}</text>
+        </view>
+        <button bindtap="random" class="btn" wx:if="{{!showrandom}}" type="primary" size="mini">换一个！</button>
+    </view>
+</view>

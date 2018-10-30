@@ -1,0 +1,13 @@
+<view class="listWrapper">
+    <view wx:if="{{result.length}}" 
+    wx:for="{{result}}" 
+    wx:key="{{item.id}}" 
+    bindtap="linkToDetails" 
+    class="itemWrapper"
+    data-id="{{item.id}}"
+    >
+        <image src="{{item.albums[0]}}" />
+        <text class="itemTitle">{{item.title}}</text>
+        <text class="itemImtro">{{item.imtro}}</text>
+    </view>
+</view>

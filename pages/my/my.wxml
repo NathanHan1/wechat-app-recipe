@@ -1,0 +1,21 @@
+<!-- pages/my/my.wxml -->
+<view class="myWrapper">
+    <view class="userInfoWrapper">
+        <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            获取头像昵称
+        </button>
+        <view wx:else class="userInfoMain">
+            <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+            <view class="name">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+    <button decode="{{true}}" class="btnShare" open-type="share">
+        <text class="text">分享给好友</text>
+    </button>
+    <button decode="{{true}}" class="btnShare" bindtap="aboutProgram">
+        <text class="text">关于食谱指南</text>
+    </button>
+    <button decode="{{true}}" class="btnShare" bindtap="aboutAuthor">
+        <text class="text">关于作者</text>
+    </button>
+</view>

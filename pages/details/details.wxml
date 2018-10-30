@@ -1,0 +1,27 @@
+<view wx:if="{{details.title}}" class="detailsWrapper">
+    <image class="detailsImg" src="{{details.albums[0]}}" />
+    <view class="info">
+        <text class="detailsTitle">{{details.title}}</text>
+        <text class="detailsTags">{{details.tags}}</text>
+        <text class="detailsImtro">{{details.imtro}}</text>
+    </view>
+    <view class="material">
+        <view class="ingredients">
+            <text class="ingredientsTitle">主料</text>
+            <text class="ingredientsData">{{details.ingredients}}</text>
+        </view>
+        <view class="burden">
+            <text class="burdenTitle">配料</text>
+            <view class= class="burdenData">
+                <view class="itemBurdenData" wx:for="{{details.burden}}" wx:key="{{details.burden}}">{{item}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="stepWrapper">
+        <view class="step" wx:for="{{details.steps}}" wx:key="{{details.step}}">
+            <text decode="{{true}}" class="stepTitle">步骤&nbsp;&nbsp;{{index+1}}</text>
+            <text class="stepInfo">{{item.step}}</text>
+            <image src="{{item.img}}" class="stepImg" />
+        </view>
+    </view>
+</view>

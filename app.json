@@ -1,0 +1,33 @@
+{
+    "pages": ["pages/index/index", "pages/series/series", "pages/my/my", "pages/list/list", "pages/details/details"],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "食谱指南",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#666",
+        "selectedColor": "#13227a",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "指南",
+                "iconPath": "img/zhinan1.png",
+                "selectedIconPath": "img/zhinan2.png"
+            },
+            {
+                "pagePath": "pages/series/series",
+                "text": "菜系",
+                "iconPath": "img/caixi1.png",
+                "selectedIconPath": "img/caixi2.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "img/my1.png",
+                "selectedIconPath": "img/my2.png"
+            }
+        ]
+    }
+}

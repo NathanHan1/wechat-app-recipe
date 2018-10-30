@@ -1,0 +1,6 @@
+
+page{
+    height: 90%;
+    width: 750rpx;
+    background: #eee;
+}

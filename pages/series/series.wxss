@@ -1,0 +1,26 @@
+/* pages/series/series.wxss */
+.seriesWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.seriesWrapper .itemWrapper{
+    flex: 0 0 155rpx;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    margin: 5px ;
+    color: #666;
+    width: 155rpx;
+    height:200rpx;
+    box-shadow: 4px 4px 5px #bbb;
+}
+
+.seriesWrapper .itemWrapper .itemImage{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 155rpx;
+    height: 155rpx;
+}

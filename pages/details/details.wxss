@@ -1,0 +1,135 @@
+
+.detailsImg {
+    width: 750rpx;
+}
+
+.info {
+    width: 670rpx;
+    margin: 10px auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.info .detailsTitle {
+    display: block;
+    height: 40px;
+    color: #111;
+    text-align: center;
+}
+
+.info .detailsTags {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    color: #3d9970;
+    font-size: 16px;
+}
+
+.info .detailsImtro {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    line-height: 30px;
+    text-indent: 2em;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.material{
+    width: 700rpx;
+    margin: 10px auto;
+}
+.material .ingredients{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px #bbb;
+}
+
+.material .ingredientsTitle{
+    flex: 0 0 150rpx;
+    background: #fff;
+    min-height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material .ingredientsData{
+    flex: 1;
+    color: #444;
+    line-height: 20px;
+    font-size: 18px;
+    min-height: 70px;
+    background: #ddd;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.material .burden{
+    width: 100%;
+    display: flex;
+    box-shadow: 3px 3px 5px #bbb;
+}
+
+.material .burdenTitle{
+    flex: 0 0 150rpx;
+    background: #fff;
+    min-height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material .burdenData{
+    flex: 1;
+    color: #444;
+    line-height: 20px;
+    font-size: 18px;
+    min-height: 70px;
+    background: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.material .burdenData .itemBurdenData{
+    flex: 0 0 50px;
+    margin: 5px;
+}
+
+.step{
+    width: 700rpx;
+    margin: 15px auto;
+    background: #fff;
+    box-shadow: 3px 3px 5px #bbb;
+    text-align: center;
+}
+
+.step .stepTitle{
+    display: block;
+    color: #111;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+}
+
+.step .stepInfo{
+    display: block;
+    color: #666;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 7px 0;
+}
+
+.step image{
+    width: 650rpx;
+}
